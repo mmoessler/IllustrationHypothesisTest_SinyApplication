@@ -16,7 +16,7 @@ suppressWarnings(sapply(pac, checkpac))
 run_app <- function (url = "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/archive/refs/heads/main.zip") {
   
   # # inputs
-  # url <- "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/archive/refs/heads/main.zip"
+  url <- "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/archive/refs/heads/main.zip"
   
   filetype <- NULL
   subdir <- NULL
@@ -79,7 +79,8 @@ run_app <- function (url = "https://github.com/mmoessler/IllustrationHypothesisT
   # # runApp(appdir, ...)
   # runApp(appdir)
   
-  file.path <- file.path(appdir, "ShinyDocument.rmd")
+  # file.path <- file.path(appdir, "ShinyDocument.rmd")
+  file.path <- file.path(appdir, "IllustrationHypothesisTest_ShinyApplication/ShinyDocument.rmd")
   file.path
   
   rmarkdown::run(file = file.path,
