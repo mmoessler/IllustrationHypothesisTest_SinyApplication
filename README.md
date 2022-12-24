@@ -21,6 +21,6 @@ Illustration of Hypothesis Tests
 
 ```
 
-source("source("https://raw.githubusercontent.com/mmoessler/IllustrationHypothesisTest_SinyApplication/main/RunApp_IllustrationHypothesisTest_ShinyApplication.R")")
+source("https://raw.githubusercontent.com/mmoessler/IllustrationHypothesisTest_SinyApplication/main/RunApp_IllustrationHypothesisTest_ShinyApplication.R")
 
 ```
