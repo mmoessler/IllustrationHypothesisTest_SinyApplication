@@ -1,0 +1,7 @@
+
+
+html_document:
+  highlight: tango
+  css: style.css
+  includes:
+    in_header: header_01.html
