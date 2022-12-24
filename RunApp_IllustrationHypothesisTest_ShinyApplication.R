@@ -13,7 +13,7 @@ checkpac <- function(x) {
 # check if packages are install yet
 suppressWarnings(sapply(pac, checkpac))
 
-run_app <- function (url = "https://ilias.uni-hohenheim.de/data/UHOH/lm_data/lm_1733330/ShinyApplication/IllustrationHypothesisTest_ShinyApplication.zip") {
+run_app <- function (url = "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/blob/main/IllustrationHypothesisTest_ShinyApplication.zip") {
   
   # # inputs
   # url <- "https://ilias.uni-hohenheim.de/data/UHOH/lm_data/lm_1733330/ShinyApplication/IllustrationHypothesisTest_ShinyApplication.zip"
