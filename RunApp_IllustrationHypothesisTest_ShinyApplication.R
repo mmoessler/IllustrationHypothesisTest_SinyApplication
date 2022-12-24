@@ -13,10 +13,10 @@ checkpac <- function(x) {
 # check if packages are install yet
 suppressWarnings(sapply(pac, checkpac))
 
-run_app <- function (url = "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/blob/main/IllustrationHypothesisTest_ShinyApplication.zip") {
+run_app <- function (url = "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/archive/refs/heads/main.zip") {
   
   # # inputs
-  # url <- "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/blob/main/IllustrationHypothesisTest_ShinyApplication.zip"
+  # url <- "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/archive/refs/heads/main.zip"
   
   filetype <- NULL
   subdir <- NULL
@@ -89,5 +89,5 @@ run_app <- function (url = "https://github.com/mmoessler/IllustrationHypothesisT
   
 }
 
-run_app(url = "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/blob/main/IllustrationHypothesisTest_ShinyApplication.zip")
+run_app(url = "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/archive/refs/heads/main.zip")
 
