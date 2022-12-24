@@ -169,6 +169,8 @@ shinyAppDir(appDir = "./ShinyApplication",
 Source: Stock and Watson (2020), p. 763-764
 </p>
 
+<br>
+
 </div>
 <!--..........................................................................-->
 
