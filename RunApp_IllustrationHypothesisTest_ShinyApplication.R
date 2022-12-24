@@ -16,7 +16,7 @@ suppressWarnings(sapply(pac, checkpac))
 run_app <- function (url = "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/blob/main/IllustrationHypothesisTest_ShinyApplication.zip") {
   
   # # inputs
-  # url <- "https://ilias.uni-hohenheim.de/data/UHOH/lm_data/lm_1733330/ShinyApplication/IllustrationHypothesisTest_ShinyApplication.zip"
+  # url <- "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/blob/main/IllustrationHypothesisTest_ShinyApplication.zip"
   
   filetype <- NULL
   subdir <- NULL
@@ -89,5 +89,5 @@ run_app <- function (url = "https://github.com/mmoessler/IllustrationHypothesisT
   
 }
 
-run_app(url = "https://ilias.uni-hohenheim.de/data/UHOH/lm_data/lm_1734940/ShinyApplications/IllustrationHypothesisTest_ShinyApplication.zip")
+run_app(url = "https://github.com/mmoessler/IllustrationHypothesisTest_SinyApplication/blob/main/IllustrationHypothesisTest_ShinyApplication.zip")
 
