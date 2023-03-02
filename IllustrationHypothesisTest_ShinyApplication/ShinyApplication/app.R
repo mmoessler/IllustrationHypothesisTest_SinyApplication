@@ -364,11 +364,17 @@ server <- function(input, output) {
   output$Text02 <- renderText({ 
     
     if (input$test==c("two_sid")) {
-      paste0("<span style='text-decoration: none; font-size: 14pt'> Remember, in the case of a two-sided test we compute: $$p\\text{-value}=\\Phi\\left(-\\left|t^{act}\\right|\\right)=", format(pnorm(-abs(as.numeric(input$t.act))), digits=2, nsmall=2), "$$<span> <script>if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);</script>")
+      
+      paste0("<span style='text-decoration: none; font-size: 14pt'> Remember, in the case of a two-sided test we compute: $$\\begin{align*}p\\text{-value}&=2 * \\Phi\\left(-\\left|t^{act}\\right|\\right) \\\\ \n &= 2 * \\Phi\\left(-\\left|", format(as.numeric(input$t.act), digits=2, nsmall=2), "\\right|\\right) \\\\ \n &= ", format(2*pnorm(-abs(as.numeric(input$t.act))), digits=2, nsmall=2), "\\end{align*}$$<span> <script>if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);</script>")
+    
     } else if (input$test==c("one_sid_geq")) {
-      paste0("<span style='text-decoration: none; font-size: 14pt'> Remember, in the case of a one-sided greater or equal test we compute: $$p\\text{-value}=\\Phi\\left(t^{act}\\right)=", format(pnorm(as.numeric(input$t.act)), digits=2, nsmall=2), "$$<span> <script>if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);</script>")
+        
+      paste0("<span style='text-decoration: none; font-size: 14pt'> Remember, in the case of a one-sided greater or equal test we compute: $$\\begin{align*}p\\text{-value}&=\\Phi\\left(t^{act}\\right) \\\\ \n &= \\Phi\\left(", format(as.numeric(input$t.act), digits=2, nsmall=2), "\\right) \\\\ \n &= ", format(pnorm(as.numeric(input$t.act)), digits=2, nsmall=2), "\\end{align*}$$<span> <script>if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);</script>")
+    
     } else if (input$test==c("one_sid_leq")) {
-      paste0("<span style='text-decoration: none; font-size: 14pt'> Remember, in the case of a one-sided less or equal test we compute: $$p\\text{-value}=1-\\Phi\\left(t^{act}\\right)=", format(1-pnorm(as.numeric(input$t.act)), digits=2, nsmall=2), "$$<span> <script>if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);</script>")
+      
+      paste0("<span style='text-decoration: none; font-size: 14pt'> Remember, in the case of a one-sided less or equal test we compute: $$\\begin{align*}p\\text{-value}&=1-\\Phi\\left(t^{act}\\right) \\\\ \n &= 1-\\Phi\\left(", format(as.numeric(input$t.act), digits=2, nsmall=2), "\\right) \\\\ \n &= ", format(1-pnorm(as.numeric(input$t.act)), digits=2, nsmall=2), "\\end{align*}$$<span> <script>if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);</script>")
+      
     }
     
 
